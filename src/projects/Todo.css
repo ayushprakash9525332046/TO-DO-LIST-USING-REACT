@@ -1,0 +1,131 @@
+/* Main container */
+.todo-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 3%;
+  background-image: linear-gradient(100deg, #001214, #001f29);
+  color: white;
+  transition: 0.3s linear;
+}
+
+/* Header */
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  min-height: 20vh;
+}
+
+/* FORM */
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 20px 0;
+}
+
+form input {
+  flex: 1;
+  max-width: 500px;
+  padding: 12px;
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+  background-color: #f2f3f4;
+  color: #000;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+form button {
+  padding: 12px 22px;
+  min-width: 120px;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  background-color: #5dade2;
+  color: #fff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: 0.2s ease;
+}
+
+form button:hover {
+  background-color: #f1c40f;
+}
+
+/* List container */
+.myUnOrdList {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Todo item */
+.todo-item {
+  margin: 1.8rem auto;
+  background-color: #f2f3f4;
+  border-radius: 25px;
+  min-width: 35rem;
+  max-width: 40rem;
+  padding: 1.3rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 0.25fr 0.25fr;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  color: #1c2833;
+}
+
+.todo-item span {
+  overflow-wrap: anywhere;
+}
+
+/* Buttons inside list */
+.check-btn,
+.delete-btn {
+  font-size: 2.2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Icons */
+.check-btn {
+  color: #2ecc71;
+}
+
+.delete-btn {
+  color: #e74c3c;
+}
+
+/* Line-through checked tasks */
+.checkList {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Clear button */
+.clear-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.clear-btn:hover {
+  background-color: #c0392b;
+}
